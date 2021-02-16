@@ -44,7 +44,7 @@ class TaskViewSet(ModelViewSet):
     """
     queryset            = Task.objects.all()
     serializer_class    = TaskModelSerializer
-    renderer_classes    = (BrowsableAPIRenderer, JSONRenderer, XMLRenderer,)
+    renderer_classes    = (JSONRenderer, XMLRenderer, BrowsableAPIRenderer,)
     filter_backends     = [OrderingFilter]
     ordering_fields     = ['status',]
     pagination_class    = (CustomPagination)
@@ -106,7 +106,7 @@ class TaskViewSet(ModelViewSet):
 class TaskListView(ListAPIView):
     queryset            = Task.objects.all()
     serializer_class    = TaskModelSerializer
-    renderer_classes    = (BrowsableAPIRenderer, JSONRenderer, XMLRenderer,)
+    renderer_classes    = (JSONRenderer, XMLRenderer, BrowsableAPIRenderer,)
     filter_backends     = [SearchFilter, OrderingFilter]
     search_fields       = ['description', 'duration',]
     ordering_fields     = ['status', 'duration',]
