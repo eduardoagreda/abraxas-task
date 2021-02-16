@@ -7,6 +7,26 @@ para el contendor de la django y Docker-compose para la orquestación de la base
 
 _Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
 
+_Se define el modelo Task de la siguiente forma:_
+
+```
+  description
+  date_task
+  duration
+  status
+  time_total
+```
+
+_El campo status se deifne como entero, con el fin de poder realizar ordenamiento del listado de tareas mediante este campo, los números que se utilizan son:_
+
+``` 
+  1 -> pending
+  2 -> complete
+```
+_El campo date_task nos sirve para poder asignarle la fecha en que hará la tarea al usuario que creó la misma, no se contempla la asignación de tareas por parte
+de un tercer usuario con mayor privilegios (permisos). Así mismo, podrémos realizar búsquedas de tareas mediante una fecha establecida._
+
+_Los datos que se ven en el listado y en las búsquedas son paginados y está establecido que son 10 datos que mostrará por página._
 
 ### Pre-requisitos 📋
 
