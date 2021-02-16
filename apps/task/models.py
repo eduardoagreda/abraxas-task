@@ -20,7 +20,8 @@ class Task(BaseModel):
         (2, 'Completado')
     ]
 
-    description = models.TextField('Field from task name')
+    description = models.TextField('Field from task name', blank=True, null=True)
+    date        = models.DateField("User's task assignation date", blank=True, null=True)
     duration    = models.IntegerField('Task time life in minutes', choices=DURATION_CHOICE)
     status      = models.IntegerField('Status task', choices=STATUS_CHOICE, default=1)
     total_time  = models.TimeField("Users' time of task finish", blank=True, null=True)

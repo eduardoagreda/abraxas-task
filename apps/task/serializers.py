@@ -12,6 +12,7 @@ class TaskModelSerializer(ModelSerializer):
 
     def update(self, instance, validated_data):
         instance.description = validated_data.get('description', instance.description)
+        instance.date        = validated_data.get('date', instance.date)
         instance.duration    = validated_data.get('duration', instance.duration)
         instance.status      = validated_data.get('status', instance.status)
         instance.total_time  = validated_data.get('total_time', instance.total_time)
