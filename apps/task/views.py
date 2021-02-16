@@ -56,40 +56,32 @@ class TaskViewSet(ModelViewSet):
         return Response(serializer.data, status=status.HTTP_200_OK)
 
     def update(self, request, pk=None):
-        try:
-            queryset    = Task.objects.all()
-            task        = get_object_or_404(queryset, pk=pk)
-            if task.status == 2:
-                message = "Can't update this task"
+        queryset    = Task.objects.all()
+        task        = get_object_or_404(queryset, pk=pk)
+        if task.status == 2:
+            message = "Can't update this task"
+        else:
+            serializer = TaskModelSerializer(task, data=request.data)
+            if serializer.is_valid(raise_exception=True):
+                serializer.save()
+                return Response(serializer.data, status=status.HTTP_200_OK)
             else:
-                serializer = TaskModelSerializer(task, data=request.data)
-                if serializer.is_valid(raise_exception=True):
-                    serializer.save()
-                    return Response(serializer.data, status=status.HTTP_200_OK)
-                else:
-                    message = 'An error occurred'
-            return Response({'data': message}, status=status.HTTP_304_NOT_MODIFIED)
-        except Exception as ex:
-            print(ex)
-            pass
+                message = 'An error occurred'
+        return Response({'data': message}, status=status.HTTP_304_NOT_MODIFIED)
     
     def partial_update(self, request, pk=None):
-        try:
-            queryset    = Task.objects.all()
-            task        = get_object_or_404(queryset, pk=pk)
-            if task.status == 2:
-                message = "Can't update this task"
+        queryset    = Task.objects.all()
+        task        = get_object_or_404(queryset, pk=pk)
+        if task.status == 2:
+            message = "Can't update this task"
+        else:
+            serializer = TaskModelSerializer(task, data=request.data, partial=True)
+            if serializer.is_valid(raise_exception=True):
+                serializer.save()
+                return Response(serializer.data, status=status.HTTP_200_OK)
             else:
-                serializer = TaskModelSerializer(task, data=request.data, partial=True)
-                if serializer.is_valid(raise_exception=True):
-                    serializer.save()
-                    return Response(serializer.data, status=status.HTTP_200_OK)
-                else:
-                    message = 'An error occurred'
-            return Response({'data': message}, status=status.HTTP_400_BAD_REQUEST)
-        except Exception as ex:
-            print(ex)
-            pass
+                message = 'An error occurred'
+        return Response({'data': message}, status=status.HTTP_400_BAD_REQUEST)
 
     def destroy(self, request, pk=None):
         queryset        = Task.objects.all()
@@ -120,6 +112,7 @@ class TaskBulkAPIView(APIView):
         for task in task_dict:
             create_task = Task.objects.create(
                 description=task['description'], 
+                date_task=task['date_task'], 
                 status=task['status'], 
                 duration=task['duration'],
                 total_time=task['total_time'])

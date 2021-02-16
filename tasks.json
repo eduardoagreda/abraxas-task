@@ -1,350 +1,350 @@
 [   
     {
         "description": "Test 1",
-        "date": "2021-02-18",
+        "date_task": "2021-02-18",
         "duration": 90,
         "status": 2,
         "total_time": "01:15:00"
     },
     {
         "description": "Test 2",
-        "date": "2021-02-21",
+        "date_task": "2021-02-21",
         "duration": 60,
         "status": 1,
         "total_time": "00:45:00"
     },
     {
         "description": "Test 3",
-        "date": "2021-02-18",
+        "date_task": "2021-02-18",
         "duration": 90,
         "status": 1,
         "total_time": "01:15:00"
     },
     {
         "description": "Test 4",
-        "date": "2021-02-21",
+        "date_task": "2021-02-21",
         "duration": 60,
         "status": 1,
         "total_time": "00:45:00"
     },
     {
         "description": "Test 5",
-        "date": "2021-02-18",
+        "date_task": "2021-02-18",
         "duration": 90,
         "status": 1,
         "total_time": "01:15:00"
     },
     {
         "description": "Test 6",
-        "date": "2021-02-21",
+        "date_task": "2021-02-21",
         "duration": 60,
         "status": 1,
         "total_time": "00:45:00"
     },
     {
         "description": "Test 7",
-        "date": "2021-02-18",
+        "date_task": "2021-02-18",
         "duration": 90,
         "status": 1,
         "total_time": "01:15:00"
     },
     {
         "description": "Test 8",
-        "date": "2021-02-21",
+        "date_task": "2021-02-21",
         "duration": 60,
         "status": 1,
         "total_time": "00:45:00"
     },
     {
         "description": "Test 9",
-        "date": "2021-02-18",
+        "date_task": "2021-02-18",
         "duration": 90,
         "status": 1,
         "total_time": "01:15:00"
     },
     {
         "description": "Test 10",
-        "date": "2021-02-21",
+        "date_task": "2021-02-21",
         "duration": 60,
         "status": 1,
         "total_time": "00:45:00"
     },
     {
         "description": "Test 11",
-        "date": "2021-02-18",
+        "date_task": "2021-02-18",
         "duration": 90,
         "status": 1,
         "total_time": "01:15:00"
     },
     {
         "description": "Test 12",
-        "date": "2021-02-21",
+        "date_task": "2021-02-21",
         "duration": 60,
         "status": 1,
         "total_time": "00:45:00"
     },
     {
         "description": "Test 13",
-        "date": "2021-02-18",
+        "date_task": "2021-02-18",
         "duration": 90,
         "status": 1,
         "total_time": "01:15:00"
     },
     {
         "description": "Test 14",
-        "date": "2021-02-21",
+        "date_task": "2021-02-21",
         "duration": 60,
         "status": 1,
         "total_time": "00:45:00"
     },
     {
         "description": "Test 15",
-        "date": "2021-02-20",
+        "date_task": "2021-02-20",
         "duration": 75,
         "status": 1,
         "total_time": "00:30:00"
     },
     {
         "description": "Test 16",
-        "date": "2021-02-21",
+        "date_task": "2021-02-21",
         "duration": 60,
         "status": 1,
         "total_time": "00:45:00"
     },
     {
         "description": "Test 17",
-        "date": "2021-02-20",
+        "date_task": "2021-02-20",
         "duration": 75,
         "status": 1,
         "total_time": "00:30:00"
     },
     {
         "description": "Test 18",
-        "date": "2021-02-21",
+        "date_task": "2021-02-21",
         "duration": 60,
         "status": 1,
         "total_time": "00:45:00"
     },
     {
         "description": "Test 19",
-        "date": "2021-02-20",
+        "date_task": "2021-02-20",
         "duration": 75,
         "status": 1,
         "total_time": "00:30:00"
     },
     {
         "description": "Test 20",
-        "date": "2021-02-21",
+        "date_task": "2021-02-21",
         "duration": 60,
         "status": 1,
         "total_time": "00:45:00"
     },
     {
         "description": "Test 21",
-        "date": "2021-02-20",
+        "date_task": "2021-02-20",
         "duration": 75,
         "status": 1,
         "total_time": "00:30:00"
     },
     {
         "description": "Test 22",
-        "date": "2021-02-21",
+        "date_task": "2021-02-21",
         "duration": 60,
         "status": 1,
         "total_time": "00:45:00"
     },
     {
         "description": "Test 23",
-        "date": "2021-02-20",
+        "date_task": "2021-02-20",
         "duration": 75,
         "status": 1,
         "total_time": "00:30:00"
     },
     {
         "description": "Test 24",
-        "date": "2021-02-21",
+        "date_task": "2021-02-21",
         "duration": 60,
         "status": 1,
         "total_time": "00:45:00"
     },
     {
         "description": "Test 25",
-        "date": "2021-02-20",
+        "date_task": "2021-02-20",
         "duration": 75,
         "status": 1,
         "total_time": "00:30:00"
     },
     {
         "description": "Test 26",
-        "date": "2021-02-21",
+        "date_task": "2021-02-21",
         "duration": 60,
         "status": 1,
         "total_time": "00:45:00"
     },
     {
         "description": "Test 27",
-        "date": "2021-02-20",
+        "date_task": "2021-02-20",
         "duration": 75,
         "status": 1,
         "total_time": "00:30:00"
     },
     {
         "description": "Test 28",
-        "date": "2021-02-21",
+        "date_task": "2021-02-21",
         "duration": 60,
         "status": 1,
         "total_time": "00:45:00"
     },
     {
         "description": "Test 29",
-        "date": "2021-02-20",
+        "date_task": "2021-02-20",
         "duration": 75,
         "status": 1,
         "total_time": "00:30:00"
     },
     {
         "description": "Test 30",
-        "date": "2021-02-21",
+        "date_task": "2021-02-21",
         "duration": 60,
         "status": 1,
         "total_time": "00:45:00"
     },
     {
         "description": "Abraxas Task 1",
-        "date": "2021-02-18",
+        "date_task": "2021-02-18",
         "duration": 90,
         "status": 1,
         "total_time": "01:15:00"
     },
     {
         "description": "Abraxas Task 2",
-        "date": "2021-02-19",
+        "date_task": "2021-02-19",
         "duration": 30,
         "status": 1,
         "total_time": "00:30:00"
     },
     {
         "description": "Abraxas Task 3",
-        "date": "2021-02-18",
+        "date_task": "2021-02-18",
         "duration": 90,
         "status": 1,
         "total_time": "01:15:00"
     },
     {
         "description": "Abraxas Task 4",
-        "date": "2021-02-21",
+        "date_task": "2021-02-21",
         "duration": 60,
         "status": 2,
         "total_time": "00:45:00"
     },
     {
         "description": "Abraxas Task 5",
-        "date": "2021-02-18",
+        "date_task": "2021-02-18",
         "duration": 45,
         "status": 2,
         "total_time": "00:45:00"
     },
     {
         "description": "Abraxas Task 6",
-        "date": "2021-02-21",
+        "date_task": "2021-02-21",
         "duration": 60,
         "status": 2,
         "total_time": "00:45:00"
     },
     {
         "description": "Abraxas Task 7",
-        "date": "2021-02-18",
+        "date_task": "2021-02-18",
         "duration": 90,
         "status": 2,
         "total_time": "01:15:00"
     },
     {
         "description": "Prueba unitaria 1",
-        "date": "2021-02-21",
+        "date_task": "2021-02-21",
         "duration": 60,
         "status": 2,
         "total_time": "00:45:00"
     },
     {
         "description": "Programación Módulo 1",
-        "date": "2021-02-19",
+        "date_task": "2021-02-19",
         "duration": 30,
         "status": 2,
         "total_time": "00:30:00"
     },
     {
         "description": "Programación Módulo 2",
-        "date": "2021-02-21",
+        "date_task": "2021-02-21",
         "duration": 60,
         "status": 2,
         "total_time": "00:45:00"
     },
     {
         "description": "Programación Módulo 3",
-        "date": "2021-02-18",
+        "date_task": "2021-02-18",
         "duration": 45,
         "status": 2,
         "total_time": "00:45:00"
     },
     {
         "description": "Programación Módulo 4",
-        "date": "2021-02-21",
+        "date_task": "2021-02-21",
         "duration": 60,
         "status": 2,
         "total_time": "00:45:00"
     },
     {
         "description": "Programación Módulo 5",
-        "date": "2021-02-18",
+        "date_task": "2021-02-18",
         "duration": 45,
         "status": 2,
         "total_time": "00:45:00"
     },
     {
         "description": "Programación Módulo 6",
-        "date": "2021-02-21",
+        "date_task": "2021-02-21",
         "duration": 60,
         "status": 2,
         "total_time": "00:45:00"
     },
     {
         "description": "Programación Módulo 7",
-        "date": "2021-02-21",
+        "date_task": "2021-02-21",
         "duration": 60,
         "status": 2,
         "total_time": "00:45:00"
     },
     {
         "description": "Programación Módulo 8",
-        "date": "2021-02-21",
+        "date_task": "2021-02-21",
         "duration": 60,
         "status": 2,
         "total_time": "00:45:00"
     },
     {
         "description": "Programación Módulo 9",
-        "date": "2021-02-19",
+        "date_task": "2021-02-19",
         "duration": 30,
         "status": 2,
         "total_time": "00:30:00"
     },
     {
         "description": "Programación Módulo 10",
-        "date": "2021-02-21",
+        "date_task": "2021-02-21",
         "duration": 60,
         "status": 2,
         "total_time": "00:45:00"
     },
     {
         "description": "Programación Módulo 11",
-        "date": "2021-02-19",
+        "date_task": "2021-02-19",
         "duration": 30,
         "status": 2,
         "total_time": "00:30:00"
     },
     {
         "description": "Prueba unitaria 2",
-        "date": "2021-02-21",
+        "date_task": "2021-02-21",
         "duration": 60,
         "status": 2,
         "total_time": "00:45:00"
