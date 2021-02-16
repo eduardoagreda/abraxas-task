@@ -98,8 +98,10 @@ class TaskListView(ListAPIView):
     queryset            = Task.objects.all()
     serializer_class    = TaskModelSerializer
     filter_backends     = [SearchFilter, OrderingFilter]
-    search_fields       = ['description', 'duration',]
-    ordering_fields     = ['status', 'duration',]
+    search_fields       = ['description', 'date_task',]
+    ordering_fields     = ['status', 'date_task',]
+    pagination_class    = (CustomPagination)
+
 
 class TaskBulkAPIView(APIView):
     """
