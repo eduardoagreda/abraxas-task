@@ -33,11 +33,12 @@ class TaskApiTest(TestCase):
         )
         self.client.force_login(self.user)
 
-        self.task_one = Task.objects.create(description='Task 1', status=1, duration=45)
-        self.task_two = Task.objects.create(description='Task 2', status=2, duration=90, total_time='01:15:00')
+        self.task_one = Task.objects.create(description='Task 1', date='2021-02-18', status=1, duration=45)
+        self.task_two = Task.objects.create(description='Task 2', date='2021-02-19', status=2, duration=90, total_time='01:15:00')
 
         self.payload_task_complete = {
             'description': 'Task 1',
+            'date': '2021-02-18',
             'status': 2,
             'duration': 90,
             'total_time': '01:30:00'
@@ -45,14 +46,15 @@ class TaskApiTest(TestCase):
 
         self.payload_task_pending = {
             'description': 'Task 2',
+            'date': '2021-02-19',
             'status': 1,
             'duration': 60,
             'total_time': '00:45:00'
         }
     
     def test_retrive_tasks_list(self):
-        Task.objects.create(description='Test 1', status=1, duration=45, total_time='00:35:00')
-        Task.objects.create(description='Test 2', status=2, duration=90, total_time='01:30:00')
+        Task.objects.create(description='Test 1', date='2021-02-17', status=1, duration=45, total_time='00:35:00')
+        Task.objects.create(description='Test 2', date='2021-02-18', status=2, duration=90, total_time='01:30:00')
 
         response = self.client.get(TASK_URL)
         tasks       = Task.objects.all()
@@ -65,12 +67,14 @@ class TaskApiTest(TestCase):
         """
         payload_pending = {
             'description': 'Test 1', 
+            'date': '2021-02-17',
             'status': 1, 
             'duration': 30
         }
 
         payload_complete = {
             'description': 'Test 2',
+            'date': '2021-02-19',
             'status': 2,
             'duration': 60,
             'total_time': '00:45:00'
