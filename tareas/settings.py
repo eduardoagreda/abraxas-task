@@ -149,8 +149,8 @@ REST_FRAMEWORK = {
     'DEFAULT_RENDERER_CLASSES': [
         'rest_framework.renderers.JSONRenderer',
         'rest_framework_xml.renderers.XMLRenderer',
-        'rest_framework.renderers.BrowsableAPIRenderer',
     ],
+    'DEFAULT_CONTENT_NEGOTIATION_CLASS': 'apps.task.renderers.IgnoreClientContentNegotiation',
     'SEARCH_PARAM': 'q', 
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination',
     'PAGINATE_BY': 10,
