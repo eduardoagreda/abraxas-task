@@ -84,15 +84,16 @@ _Para ejecutar nos dirigimos en la terminal al path en donde se encuentra nuestr
   1. docker-compose build
 ```
 
-_Este comando nos construirá los contenedores que se especificaron en el archivo docker-compose.yml, esperamos a que se termine de ejecutar el comando._
-
-_Una vez que se terminó de construir nuestro contenedor, procedemos a ejecutar el siguiente comando:_
+_Este comando nos construirá los contenedores que se especificaron en el archivo docker-compose.yml, esperamos a que se termine de ejecutar el comando.
+Una vez que se terminó de construir nuestro contenedor, procedemos a ejecutar el siguiente comando:_
 
 ```
   2. docker-compose up
 ```
 
-_Este comando nos ayuda a levantar los contenedores, crea la conexión de red, la base de datos y ejecuta los comandos especificados en el apartado *command*.
+_Este comando nos ayuda a levantar los contenedores, crea la conexión de red, la base de datos y ejecuta los comandos especificados en el apartado 
+*command* del archivo docker-compose.yml, estos comandos que se ejecutan sirven para crear las migraciones, migrarlas a la base de datos y levantar
+el servicio de Django._
 
 ### Analice las pruebas funcionales 🔩
 
